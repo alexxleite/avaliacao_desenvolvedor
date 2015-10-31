@@ -1,6 +1,13 @@
 class VendasController < ApplicationController
   before_action :set_venda, only: [:show, :edit, :update, :destroy]
 
+def upload
+  uploaded_io = params[:comprador][:descricao][:preco_unitario][:quantidade][:endereco][:fornecedor]
+  File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
+    file.write(uploaded_io.read)
+  end
+end
+
   # GET /vendas
   # GET /vendas.json
   def index
