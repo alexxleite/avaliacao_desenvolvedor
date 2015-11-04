@@ -1,0 +1,29 @@
+<%= form_for(@receitum) do |f| %>
+  <% if @receitum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@receitum.errors.count, "error") %> prohibited this receitum from being saved:</h2>
+
+      <ul>
+      <% @receitum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :venda_id %><br>
+    <%= f.number_field :venda_id %>
+  </div>
+  <div class="field">
+    <%= f.label :receita_venda %><br>
+    <%= f.text_field :receita_venda %>
+  </div>
+  <div class="field">
+    <%= f.label :receita_acumulada %><br>
+    <%= f.text_field :receita_acumulada %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

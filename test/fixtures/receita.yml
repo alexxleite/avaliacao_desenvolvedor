@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  venda_id: 1
+  receita_venda: 1.5
+  receita_acumulada: 1.5
+
+two:
+  venda_id: 1
+  receita_venda: 1.5
+  receita_acumulada: 1.5

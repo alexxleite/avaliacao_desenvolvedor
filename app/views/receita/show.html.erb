@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Venda:</strong>
+  <%= @receitum.venda_id %>
+</p>
+
+<p>
+  <strong>Receita venda:</strong>
+  <%= @receitum.receita_venda %>
+</p>
+
+<p>
+  <strong>Receita acumulada:</strong>
+  <%= @receitum.receita_acumulada %>
+</p>
+
+<%= link_to 'Edit', edit_receitum_path(@receitum) %> |
+<%= link_to 'Back', receita_path %>
