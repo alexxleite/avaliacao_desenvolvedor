@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 class VendasController < ApplicationController
@@ -16,6 +17,22 @@ class VendasController < ApplicationController
   def import
     Venda.import(params[:file])
     redirect_to vendas_path, notice: "Vendas Added successfully"
+=======
+class VendasController < ApplicationController
+  before_action :set_venda, only: [:show, :edit, :update, :destroy]
+
+def upload
+  uploaded_io = params[:comprador][:descricao][:preco_unitario][:quantidade][:endereco][:fornecedor]
+  File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
+    file.write(uploaded_io.read)
+  end
+end
+
+  # GET /vendas
+  # GET /vendas.json
+  def index
+    @vendas = Venda.all
+>>>>>>> b6bf6ca40c7a2ceb486bbcf13cc7fb556249fdea
   end
 
   # GET /vendas/1

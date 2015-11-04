@@ -6,11 +6,16 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+<<<<<<< HEAD
 module TaxWeb
   class Application < Rails::Application
     # the new line added for autoload of lib - alex 11/2015
     config.autoload_paths += %W(#{config.root}/lib)
 
+=======
+module Taxweb
+  class Application < Rails::Application
+>>>>>>> b6bf6ca40c7a2ceb486bbcf13cc7fb556249fdea
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

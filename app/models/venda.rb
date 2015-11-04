@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'csv'
 
 class Venda < ActiveRecord::Base
@@ -39,3 +40,9 @@ class Venda < ActiveRecord::Base
 end
 
 #{"comprador"=>"João Silva", "descricao"=>"R$10 off R$20 of food", "preco_unitario"=>"10.0", "quantidade"=>"2", "endereco"=>"987 Fake St", "fornecedor"=>"Bob's Pizza"}
+=======
+class Venda < ActiveRecord::Base
+
+	validates_presence_of :comprador, :descricao, :preco_unitario, :quantidade, :endereco, :fornecedor
+end
+>>>>>>> b6bf6ca40c7a2ceb486bbcf13cc7fb556249fdea

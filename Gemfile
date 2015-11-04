@@ -45,4 +45,7 @@ group :development do
   gem 'spring'
 end
 
+<<<<<<< HEAD
 gem 'will_paginate'
+=======
+>>>>>>> b6bf6ca40c7a2ceb486bbcf13cc7fb556249fdea

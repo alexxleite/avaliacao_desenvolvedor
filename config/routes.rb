@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :receita
 
   resources :vendas do 
@@ -6,6 +7,9 @@ Rails.application.routes.draw do
   end
 
 
+=======
+  resources :vendas
+>>>>>>> b6bf6ca40c7a2ceb486bbcf13cc7fb556249fdea
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
