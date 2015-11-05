@@ -1,5 +1,7 @@
 Instruções de Instalação:
 
+# App read only files .csv (for .txt need implementation)
+
 # Ruby version : 
 	- ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
 	- Rails 4.2.4
