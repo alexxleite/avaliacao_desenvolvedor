@@ -1,3 +1,35 @@
+Instruções de Instalação:
+
+# Ruby version : 
+	- ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+	- Rails 4.2.4
+
+# System dependencies
+	- customer.CSV file
+
+# Configuration
+	- database: sqlite3 (default)
+	- database: db/development.sqlite3
+	- database: db/test.sqlite3
+	- database: db/production.sqlite3
+
+# How to run the test suite
+	- Open app:
+		http://localhost:3000/vendas
+	- Calculs:
+		http://localhost:3000/receita
+
+# Deployment instructions
+	- https://github.com/alexxleite/avaliacao_desenvolvedor
+
+
+
+
+
+
+
+
+
 # Desafio de programação 1
 A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
 
