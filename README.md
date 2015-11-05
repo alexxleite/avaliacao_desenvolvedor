@@ -3,8 +3,11 @@ Instruções de Instalação:
 # App read only files .csv (for .txt need implementation)
 
 # Ruby version : 
-	- ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
+	- Ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
 	- Rails 4.2.4
+	-	RubyGems version	2.4.8
+	-	Rack version	1.6.4
+	-	JavaScript Runtime	Node.js (V8)
 
 # System dependencies
 	- customer.CSV file
@@ -26,9 +29,32 @@ Instruções de Instalação:
 
 
 
+# Middleware	
 
-
-
+    Rack::Sendfile
+    ActionDispatch::Static
+    Rack::Lock
+    #<ActiveSupport::Cache::Strategy::LocalCache::Middleware:0x00000003e08c30>
+    Rack::Runtime
+    Rack::MethodOverride
+    ActionDispatch::RequestId
+    Rails::Rack::Logger
+    ActionDispatch::ShowExceptions
+    WebConsole::Middleware
+    ActionDispatch::DebugExceptions
+    ActionDispatch::RemoteIp
+    ActionDispatch::Reloader
+    ActionDispatch::Callbacks
+    ActiveRecord::Migration::CheckPending
+    ActiveRecord::ConnectionAdapters::ConnectionManagement
+    ActiveRecord::QueryCache
+    ActionDispatch::Cookies
+    ActionDispatch::Session::CookieStore
+    ActionDispatch::Flash
+    ActionDispatch::ParamsParser
+    Rack::Head
+    Rack::ConditionalGet
+    Rack::ETag
 
 
 
