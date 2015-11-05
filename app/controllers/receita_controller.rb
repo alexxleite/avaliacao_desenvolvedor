@@ -4,13 +4,10 @@ class ReceitaController < ApplicationController
   # GET /receita
   # GET /receita.json
   def index
+
     @receita = Receitum.all
   end
-
-  
-
-
-  
+ 
   # GET /receita/1
   # GET /receita/1.json
   def show

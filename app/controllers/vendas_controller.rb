@@ -1,23 +1,17 @@
-
 class VendasController < ApplicationController
   before_action :set_venda, only: [:show, :edit, :update, :destroy]
 
   # GET /vendas
   # GET /vendas.json
   def index
-       
     @vendas = Venda.all
     #paginate(page: params[:page], per_page: 10)
-
   end
-
-  
 
   #recebe os dados do arquivo.csv
   def import
     Venda.import(params[:file])
     redirect_to vendas_path, notice: "Vendas Added successfully"
-
   end
 
   # GET /vendas/1

@@ -21,15 +21,4 @@ ActiveRecord::Schema.define(version: 20151103143712) do
     t.datetime "updated_at",        null: false
   end
 
-  create_table "vendas", force: :cascade do |t|
-    t.string   "comprador"
-    t.text     "descricao"
-    t.float    "preco_unitario"
-    t.integer  "quantidade"
-    t.text     "endereco"
-    t.string   "fornecedor"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
-
 end

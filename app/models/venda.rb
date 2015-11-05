@@ -29,6 +29,7 @@ class Venda < ActiveRecord::Base
 			if qtd > 1
 			   @venda.destroy 
 			end
+
 		end
 
 		Venda.calculo_receita
@@ -60,7 +61,6 @@ class Venda < ActiveRecord::Base
 		    end
 	    end 
   	end
-
 
 end
 
